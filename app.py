@@ -1,6 +1,13 @@
-from flask import Flask
+from flask import Flask, redirect, url_for, render_template
 app = Flask(__name__)
 
+
 @app.route('/')
-def hello_world():
+def index():
     return 'TEST UPDATE!'
+
+
+@app.route('/login')
+def login():
+    redirect(url_for('index'))
+

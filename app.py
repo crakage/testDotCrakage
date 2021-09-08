@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template(url_for('index.html', 'templates'))
+    return render_template(url_for('index.html'))
 
 
 @app.route('/login')

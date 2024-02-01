@@ -7,7 +7,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/login')
+@app.route('/test')
 def login():
-    redirect(url_for('index'))
+    return 'this is a test!!!'
 
